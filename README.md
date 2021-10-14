@@ -24,4 +24,7 @@ shaders used by this demo.
 
 ## License
 
+All photos licensed under [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)
+and available on [Flickr](https://www.flickr.com/photos/romainguy/).
+
 Licensed under MIT License. Please see [LICENSE](./LICENSE) for more information.
