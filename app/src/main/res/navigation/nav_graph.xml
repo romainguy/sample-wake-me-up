@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/categories_fragment">
+
+    <fragment
+        android:id="@+id/categories_fragment"
+        android:name="com.example.wakemeup.CategoriesFragment"
+        android:label="Wake Me Up">
+        <action
+            android:id="@+id/show_category_wakeupcalls"
+            app:destination="@id/wakeupcalls_fragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/wakeupcalls_fragment"
+        android:name="com.example.wakemeup.WakeupCallsFragment"
+        android:label="Alarms">
+        <argument
+            android:name="category_id"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </fragment>
+</navigation>

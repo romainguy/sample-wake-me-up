@@ -1,0 +1,10 @@
+<resources>
+    <string name="title_alarm">Alarms</string>
+    <string name="app_name">Wake Me Up</string>
+    <string name="add_alarm">Add alarm</string>
+    <string name="add_group">Add group</string>
+    <string name="grid_view">Grid view</string>
+    <string name="list_view">List view</string>
+    <string name="most_recent">Most recent</string>
+    <string name="decoration">Decoration</string>
+</resources>
