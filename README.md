@@ -17,11 +17,12 @@ After downloading the release, extract is and copy the binary called `matc` (Lin
 shaders used by this demo.
 
 # Screenshots
-
-![Wake Me Up demo main screen](assets/keynote_demo_1.png)
-
-![Wake Me Up demo alarms screen](assets/keynote_demo_2.png)
-
+  
+<p>
+  <img alt="Main Screen" src="assets/keynote_demo_1.png" width="350px" />
+  <img alt="Alarms Screen" src="assets/keynote_demo_2.png" width="350px" />
+</p>
+                                                                                                      
 ## License
 
 All photos licensed under [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)
