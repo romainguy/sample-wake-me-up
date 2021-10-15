@@ -18,9 +18,10 @@ shaders used by this demo.
 
 # Screenshots
   
-Main Screen | Alarms Screen |
-:----------:|:-------------:|
-<img src="assets/keynote_demo_1.png" width="300" /> | <img src="assets/keynote_demo_2.png" width="300" /> |
+<p>
+  <img alt="Main Screen" src="assets/keynote_demo_1.png" width="350px" />
+  <img alt="Alarms Screen" src="assets/keynote_demo_2.png" width="350px" />
+</p>
                                                                                                       
 ## License
 
