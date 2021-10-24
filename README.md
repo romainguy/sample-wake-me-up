@@ -12,7 +12,7 @@ To build this demo, you must first download a copy of
 select a release that matches the version listed in [build.gradle](./build.gradle). The current
 release to use is [1.12.8](https://github.com/google/filament/releases/tag/v1.12.8).
 
-After downloading the release, extract is and copy the binary called `matc` (Linux and macOS) or 
+After downloading the release, extract it and copy the binary called `matc` (Linux and macOS) or 
 `matc.exe` (Windows) into this project's `./filament/bin`. This binary is necessary to compile the
 shaders used by this demo.
 
