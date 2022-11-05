@@ -11,8 +11,8 @@
 /build
 /captures
 /filament/bin/matc
+/filament/bin/matc.exe
 /app/src/main/assets/materials/*.filamat
 .externalNativeBuild
 .cxx
 local.properties
-filament/bin/matc.exe
