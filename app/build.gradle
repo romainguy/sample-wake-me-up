@@ -6,13 +6,13 @@ plugins {
 apply plugin: FilamentToolsPlugin
 
 android {
-    compileSdk 31
-    buildToolsVersion "30.0.3"
+    compileSdk 33
+    buildToolsVersion "33.0.0"
 
     defaultConfig {
         applicationId "com.example.wakemeup"
         minSdk 28
-        targetSdk 30
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -20,6 +20,8 @@ android {
             useSupportLibrary true
         }
     }
+
+    namespace 'com.example.wakemeup'
 
     buildTypes {
         release {
@@ -35,7 +37,6 @@ android {
 
     kotlinOptions {
         jvmTarget = '1.8'
-        useIR = true
     }
 
     buildFeatures {
@@ -55,27 +56,27 @@ android {
 tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach { compile ->
     kotlinOptions {
         // Allow use of @OptIn
-        freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
+        freeCompilerArgs += "-opt-in=kotlin.RequiresOptIn"
     }
 }
 
 dependencies {
-    implementation "androidx.core:core-ktx:1.6.0"
-    implementation 'androidx.appcompat:appcompat:1.4.0-beta01'
+    implementation "androidx.core:core-ktx:1.9.0"
+    implementation 'androidx.appcompat:appcompat:1.7.0-alpha01'
     implementation "androidx.compose.ui:ui:$compose_version"
     implementation "androidx.compose.material:material:$compose_version"
     implementation "androidx.compose.ui:ui-tooling:$compose_version"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
-    implementation "androidx.navigation:navigation-fragment-ktx:2.3.5"
-    implementation "androidx.navigation:navigation-ui-ktx:2.3.5"
-    implementation "com.google.android.material:material:1.4.0"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
+    implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
+    implementation "androidx.navigation:navigation-ui-ktx:2.5.3"
+    implementation "com.google.android.material:material:1.7.0"
 
     implementation "org.jetbrains.kotlinx:kotlinx-collections-immutable-jvm:0.3.4"
 
     implementation "net.e175.klaus:solarpositioning:0.0.9"
 
     implementation "com.google.android.filament:filament-android:$filament_version"
-    implementation "com.google.android.filament:filament-utils-android-lite:$filament_version"
+    implementation "com.google.android.filament:filament-utils-android:$filament_version"
 }
 
 filamentTools {
