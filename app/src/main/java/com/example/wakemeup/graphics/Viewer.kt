@@ -88,9 +88,9 @@ class Viewer(
         class AttachListener : android.view.View.OnAttachStateChangeListener {
             var detached = false
 
-            override fun onViewAttachedToWindow(v: android.view.View?) { detached = false }
+            override fun onViewAttachedToWindow(v: android.view.View) { detached = false }
 
-            override fun onViewDetachedFromWindow(v: android.view.View?) {
+            override fun onViewDetachedFromWindow(v: android.view.View) {
                 if (!detached) {
                     uiHelper.detach()
 
